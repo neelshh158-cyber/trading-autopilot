@@ -2,9 +2,9 @@
   "ledger": {
     "deposit": 10000,
     "floor": 5000,
-    "realised": -111.06,
-    "charges": 19.65,
-    "trades": 3,
+    "realised": -63.1,
+    "charges": 24.73,
+    "trades": 4,
     "principalProtected": false,
     "halted": false,
     "haltReason": null,
@@ -42,39 +42,22 @@
       },
       "2026-11-06": {
         "startEquity": 9888.94,
-        "net": 0,
+        "net": 47.96,
         "trades": 1,
+        "stopped": null
+      },
+      "2026-11-12": {
+        "startEquity": 9888.94,
+        "net": 0,
+        "trades": 0,
         "stopped": null
       }
     }
   },
-  "positions": [
-    {
-      "id": "2026-11-06-ITC-P1",
-      "date": "2026-11-06",
-      "symbol": "ITC",
-      "yahoo": "ITC.NS",
-      "angel": "ITC-EQ",
-      "side": "LONG",
-      "qty": 17,
-      "entry": 279.49,
-      "stop": 276.55,
-      "target": 283.55,
-      "riskPerShare": 2.9399999999999977,
-      "riskAmt": 47.6,
-      "openedAt": "2026-11-06T04:15:05.090Z",
-      "openedHm": "09:45",
-      "lastCandleTs": 1793954700000,
-      "orderId": "P1",
-      "slOrderId": null,
-      "reason": "close 279.35 above range high 278.6000061035156, volume 1.3x"
-    }
-  ],
+  "positions": [],
   "today": {
-    "date": "2026-11-06",
-    "signalled": {
-      "ITC": true
-    }
+    "date": "2026-11-12",
+    "signalled": {}
   },
-  "updatedAt": "2026-11-06T08:50:05.468Z"
+  "updatedAt": "2026-11-12T10:00:05.068Z"
 }

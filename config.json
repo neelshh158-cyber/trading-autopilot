@@ -1,0 +1,59 @@
+{
+  "money": {
+    "deposit": 10000,
+    "maxLoss": 5000,
+    "protectPrincipalAfterProfit": 1500,
+    "riskPerTradePct": 1.0,
+    "minRiskPerTrade": 25,
+    "maxChargesPctOfRisk": 35,
+    "maxDailyLossPct": 2.0,
+    "maxTradesPerDay": 4,
+    "maxOpenPositions": 1,
+    "leverage": 1
+  },
+  "session": {
+    "open": "09:15",
+    "lastEntry": "14:30",
+    "squareOff": "15:10",
+    "close": "15:30",
+    "candleMinutes": 5,
+    "holidays": []
+  },
+  "strategy": {
+    "name": "orb",
+    "rangeMinutes": 15,
+    "rangeMaxPct": 1.5,
+    "volumeMult": 1.2,
+    "minStopPct": 0.3,
+    "maxStopPct": 1.0,
+    "targetR": 1.5,
+    "breakevenAfterR": 0,
+    "allowShort": true
+  },
+  "universe": [
+    { "symbol": "RELIANCE", "yahoo": "RELIANCE.NS", "angel": "RELIANCE-EQ" },
+    { "symbol": "HDFCBANK", "yahoo": "HDFCBANK.NS", "angel": "HDFCBANK-EQ" },
+    { "symbol": "ICICIBANK", "yahoo": "ICICIBANK.NS", "angel": "ICICIBANK-EQ" },
+    { "symbol": "INFY", "yahoo": "INFY.NS", "angel": "INFY-EQ" },
+    { "symbol": "TCS", "yahoo": "TCS.NS", "angel": "TCS-EQ" },
+    { "symbol": "SBIN", "yahoo": "SBIN.NS", "angel": "SBIN-EQ" },
+    { "symbol": "AXISBANK", "yahoo": "AXISBANK.NS", "angel": "AXISBANK-EQ" },
+    { "symbol": "ITC", "yahoo": "ITC.NS", "angel": "ITC-EQ" },
+    { "symbol": "LT", "yahoo": "LT.NS", "angel": "LT-EQ" },
+    { "symbol": "HINDUNILVR", "yahoo": "HINDUNILVR.NS", "angel": "HINDUNILVR-EQ" },
+    { "symbol": "BHARTIARTL", "yahoo": "BHARTIARTL.NS", "angel": "BHARTIARTL-EQ" },
+    { "symbol": "KOTAKBANK", "yahoo": "KOTAKBANK.NS", "angel": "KOTAKBANK-EQ" }
+  ],
+  "paper": {
+    "slippageBps": 5
+  },
+  "charges": {
+    "brokeragePerOrder": 20,
+    "brokeragePct": 0.03,
+    "sttIntradaySellPct": 0.025,
+    "exchangePct": 0.00297,
+    "sebiPct": 0.0001,
+    "gstPct": 18,
+    "stampBuyPct": 0.003
+  }
+}

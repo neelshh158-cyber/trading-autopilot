@@ -1,0 +1,81 @@
+name: Trading autopilot (paper)
+
+# Paper trades the NSE session with Yahoo Finance prices and a simulated broker.
+# No account, no keys, no money. GitHub's scheduler often starts jobs hours
+# late on quiet repositories, so the job is scheduled every hour through the
+# session: whichever attempt starts first runs the day (up to 320 minutes), the
+# later ones queue behind it and exit at once when the market is closed. State
+# is committed back after each run so a later run continues an earlier one.
+#
+# Live trading does NOT run here: SEBI requires a whitelisted static IP, which
+# GitHub's runners do not have. See README.md.
+on:
+  schedule:
+    - cron: "33 3 * * 1-5"   # 09:03 IST
+    - cron: "37 4 * * 1-5"   # 10:07 IST
+    - cron: "41 5 * * 1-5"   # 11:11 IST
+    - cron: "43 6 * * 1-5"   # 12:13 IST
+    - cron: "47 7 * * 1-5"   # 13:17 IST
+    - cron: "53 8 * * 1-5"   # 14:23 IST
+  workflow_dispatch:
+    inputs:
+      max_minutes:
+        description: "Stop after this many minutes (state is saved; the next run continues)"
+        default: "320"
+      once:
+        description: "Run a single tick and exit (smoke test)"
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trading-paper
+  cancel-in-progress: false
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Tests
+        run: npm test
+
+      - name: Paper trade
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          FLAGS="--mode=paper --max-minutes=${{ github.event.inputs.max_minutes || '320' }}"
+          if [ "${{ github.event.inputs.once }}" = "true" ]; then FLAGS="$FLAGS --once"; fi
+          node src/index.mjs run $FLAGS
+
+      - name: Status
+        if: always()
+        run: node src/index.mjs status
+
+      - name: Save ledger and trades back to the repo
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          # One path at a time: git adds nothing at all if any listed path is missing.
+          for f in data/state.json data/trades.json; do
+            [ -f "$f" ] && git add "$f"
+          done
+          if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
+          git commit -m "trading: paper log $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin HEAD:"${{ github.ref_name }}" && exit 0
+            sleep 5
+          done
+          exit 1

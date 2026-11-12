@@ -1,0 +1,19 @@
+{
+  "name": "trading-autopilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Rule-based NSE intraday trading bot with a hard money-management layer. Paper mode by default; live mode through Angel One SmartAPI.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "paper": "node src/index.mjs run --mode=paper",
+    "live": "node src/index.mjs run --mode=live",
+    "backtest": "node src/index.mjs backtest",
+    "sweep": "node src/index.mjs sweep",
+    "status": "node src/index.mjs status",
+    "login-check": "node src/index.mjs login-check",
+    "kill": "node src/index.mjs kill",
+    "resume": "node src/index.mjs resume",
+    "test": "node --test \"test/*.test.mjs\""
+  }
+}

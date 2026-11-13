@@ -110,5 +110,33 @@
     "charges": 5.08,
     "net": 47.96,
     "equityAfter": 9936.9
+  },
+  {
+    "id": "2026-11-13-INFY-P1",
+    "date": "2026-11-13",
+    "symbol": "INFY",
+    "yahoo": "INFY.NS",
+    "angel": "INFY-EQ",
+    "side": "LONG",
+    "qty": 5,
+    "entry": 1149.57,
+    "stop": 1140.3,
+    "target": 1162.05,
+    "riskPerShare": 9.269999999999982,
+    "riskAmt": 43.5,
+    "openedAt": "2026-11-13T04:05:05.100Z",
+    "openedHm": "09:35",
+    "lastCandleTs": 1794551100000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 1149 above range high 1145.5999755859375, volume 2.6x",
+    "exit": 1139.73,
+    "exitReason": "stop",
+    "closedAt": "2026-11-13T06:30:05.061Z",
+    "closedHm": "12:00",
+    "gross": -49.2,
+    "charges": 6.07,
+    "net": -55.27,
+    "equityAfter": 9881.63
   }
 ]

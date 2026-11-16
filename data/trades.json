@@ -138,5 +138,33 @@
     "charges": 6.07,
     "net": -55.27,
     "equityAfter": 9881.63
+  },
+  {
+    "id": "2026-11-16-HINDUNILVR-P1",
+    "date": "2026-11-16",
+    "symbol": "HINDUNILVR",
+    "yahoo": "HINDUNILVR.NS",
+    "angel": "HINDUNILVR-EQ",
+    "side": "LONG",
+    "qty": 4,
+    "entry": 1992.4,
+    "stop": 1979.8,
+    "target": 2008.8,
+    "riskPerShare": 12.600000000000136,
+    "riskAmt": 46.4,
+    "openedAt": "2026-11-16T04:15:05.054Z",
+    "openedHm": "09:45",
+    "lastCandleTs": 1794821700000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 1991.4 above range high 1989.5999755859375, volume 1.8x",
+    "exit": 1997.7,
+    "exitReason": "square-off",
+    "closedAt": "2026-11-16T09:40:05.098Z",
+    "closedHm": "15:10",
+    "gross": 21.2,
+    "charges": 8.47,
+    "net": 12.73,
+    "equityAfter": 9894.36
   }
 ]

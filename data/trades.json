@@ -166,5 +166,33 @@
     "charges": 8.47,
     "net": 12.73,
     "equityAfter": 9894.36
+  },
+  {
+    "id": "2026-11-17-RELIANCE-P1",
+    "date": "2026-11-17",
+    "symbol": "RELIANCE",
+    "yahoo": "RELIANCE.NS",
+    "angel": "RELIANCE-EQ",
+    "side": "SHORT",
+    "qty": 6,
+    "entry": 1335.43,
+    "stop": 1343.6,
+    "target": 1324.85,
+    "riskPerShare": 8.169999999999845,
+    "riskAmt": 45,
+    "openedAt": "2026-11-17T04:05:05.022Z",
+    "openedHm": "09:35",
+    "lastCandleTs": 1794893700000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 1336.1 below range low 1337.699951171875, volume 1.3x",
+    "exit": 1344.27,
+    "exitReason": "stop",
+    "closedAt": "2026-11-17T05:40:05.093Z",
+    "closedHm": "11:10",
+    "gross": -53.04,
+    "charges": 8.53,
+    "net": -61.57,
+    "equityAfter": 9832.79
   }
 ]

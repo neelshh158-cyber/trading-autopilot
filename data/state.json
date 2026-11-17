@@ -2,9 +2,9 @@
   "ledger": {
     "deposit": 10000,
     "floor": 5000,
-    "realised": -105.64,
-    "charges": 39.27,
-    "trades": 6,
+    "realised": -167.21,
+    "charges": 47.8,
+    "trades": 7,
     "principalProtected": false,
     "halted": false,
     "haltReason": null,
@@ -63,15 +63,21 @@
         "net": 12.73,
         "trades": 1,
         "stopped": null
+      },
+      "2026-11-17": {
+        "startEquity": 9894.36,
+        "net": -61.57,
+        "trades": 1,
+        "stopped": null
       }
     }
   },
   "positions": [],
   "today": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "signalled": {
-      "HINDUNILVR": true
+      "RELIANCE": true
     }
   },
-  "updatedAt": "2026-11-16T10:00:05.083Z"
+  "updatedAt": "2026-11-17T08:55:08.435Z"
 }

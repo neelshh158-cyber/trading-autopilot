@@ -81,13 +81,19 @@
         "net": 0,
         "trades": 0,
         "stopped": null
+      },
+      "2026-11-20": {
+        "startEquity": 9832.79,
+        "net": 0,
+        "trades": 0,
+        "stopped": null
       }
     }
   },
   "positions": [],
   "today": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "signalled": {}
   },
-  "updatedAt": "2026-11-19T10:00:05.080Z"
+  "updatedAt": "2026-11-20T08:50:08.859Z"
 }

@@ -2,9 +2,9 @@
   "ledger": {
     "deposit": 10000,
     "floor": 5000,
-    "realised": -167.21,
-    "charges": 47.8,
-    "trades": 7,
+    "realised": -135.64,
+    "charges": 50.42,
+    "trades": 8,
     "principalProtected": false,
     "halted": false,
     "haltReason": null,
@@ -87,13 +87,21 @@
         "net": 0,
         "trades": 0,
         "stopped": null
+      },
+      "2026-11-23": {
+        "startEquity": 9832.79,
+        "net": 31.57,
+        "trades": 1,
+        "stopped": null
       }
     }
   },
   "positions": [],
   "today": {
-    "date": "2026-11-20",
-    "signalled": {}
+    "date": "2026-11-23",
+    "signalled": {
+      "TCS": true
+    }
   },
-  "updatedAt": "2026-11-20T10:00:05.100Z"
+  "updatedAt": "2026-11-23T08:55:10.033Z"
 }

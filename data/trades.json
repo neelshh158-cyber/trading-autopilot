@@ -194,5 +194,33 @@
     "charges": 8.53,
     "net": -61.57,
     "equityAfter": 9832.79
+  },
+  {
+    "id": "2026-11-23-TCS-P1",
+    "date": "2026-11-23",
+    "symbol": "TCS",
+    "yahoo": "TCS.NS",
+    "angel": "TCS-EQ",
+    "side": "LONG",
+    "qty": 1,
+    "entry": 2444.72,
+    "stop": 2419.05,
+    "target": 2480.15,
+    "riskPerShare": 25.669999999999618,
+    "riskAmt": 24.45,
+    "openedAt": "2026-11-23T04:15:05.091Z",
+    "openedHm": "09:45",
+    "lastCandleTs": 1795408500000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 2443.5 above range high 2433.699951171875, volume 1.3x",
+    "exit": 2478.91,
+    "exitReason": "target",
+    "closedAt": "2026-11-23T04:40:05.091Z",
+    "closedHm": "10:10",
+    "gross": 34.19,
+    "charges": 2.62,
+    "net": 31.57,
+    "equityAfter": 9864.36
   }
 ]

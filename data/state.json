@@ -2,9 +2,9 @@
   "ledger": {
     "deposit": 10000,
     "floor": 5000,
-    "realised": -82.13,
-    "charges": 54.85,
-    "trades": 9,
+    "realised": -56.75,
+    "charges": 60.01,
+    "trades": 10,
     "principalProtected": false,
     "halted": false,
     "haltReason": null,
@@ -108,39 +108,18 @@
       },
       "2026-11-26": {
         "startEquity": 9917.87,
-        "net": 0,
+        "net": 25.38,
         "trades": 1,
         "stopped": null
       }
     }
   },
-  "positions": [
-    {
-      "id": "2026-11-26-ICICIBANK-P1",
-      "date": "2026-11-26",
-      "symbol": "ICICIBANK",
-      "yahoo": "ICICIBANK.NS",
-      "angel": "ICICIBANK-EQ",
-      "side": "SHORT",
-      "qty": 3,
-      "entry": 1624.69,
-      "stop": 1641.75,
-      "target": 1601.15,
-      "riskPerShare": 17.059999999999945,
-      "riskAmt": 48.75,
-      "openedAt": "2026-11-26T04:15:05.088Z",
-      "openedHm": "09:45",
-      "lastCandleTs": 1795682700000,
-      "orderId": "P1",
-      "slOrderId": null,
-      "reason": "close 1625.5 below range low 1627.4000244140625, volume 1.3x"
-    }
-  ],
+  "positions": [],
   "today": {
     "date": "2026-11-26",
     "signalled": {
       "ICICIBANK": true
     }
   },
-  "updatedAt": "2026-11-26T08:50:05.411Z"
+  "updatedAt": "2026-11-26T10:00:05.101Z"
 }

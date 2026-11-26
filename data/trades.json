@@ -250,5 +250,33 @@
     "charges": 4.43,
     "net": 53.51,
     "equityAfter": 9917.87
+  },
+  {
+    "id": "2026-11-26-ICICIBANK-P1",
+    "date": "2026-11-26",
+    "symbol": "ICICIBANK",
+    "yahoo": "ICICIBANK.NS",
+    "angel": "ICICIBANK-EQ",
+    "side": "SHORT",
+    "qty": 3,
+    "entry": 1624.69,
+    "stop": 1641.75,
+    "target": 1601.15,
+    "riskPerShare": 17.059999999999945,
+    "riskAmt": 48.75,
+    "openedAt": "2026-11-26T04:15:05.088Z",
+    "openedHm": "09:45",
+    "lastCandleTs": 1795685700000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 1625.5 below range low 1627.4000244140625, volume 1.3x",
+    "exit": 1614.51,
+    "exitReason": "square-off",
+    "closedAt": "2026-11-26T09:40:05.057Z",
+    "closedHm": "15:10",
+    "gross": 30.54,
+    "charges": 5.16,
+    "net": 25.38,
+    "equityAfter": 9943.25
   }
 ]

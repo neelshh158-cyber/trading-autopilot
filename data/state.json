@@ -2,9 +2,9 @@
   "ledger": {
     "deposit": 10000,
     "floor": 5000,
-    "realised": -56.75,
-    "charges": 60.01,
-    "trades": 10,
+    "realised": -108.34,
+    "charges": 64.84,
+    "trades": 11,
     "principalProtected": false,
     "halted": false,
     "haltReason": null,
@@ -111,15 +111,21 @@
         "net": 25.38,
         "trades": 1,
         "stopped": null
+      },
+      "2026-11-27": {
+        "startEquity": 9943.25,
+        "net": -51.59,
+        "trades": 1,
+        "stopped": null
       }
     }
   },
   "positions": [],
   "today": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "signalled": {
-      "ICICIBANK": true
+      "SBIN": true
     }
   },
-  "updatedAt": "2026-11-26T10:00:05.101Z"
+  "updatedAt": "2026-11-27T08:55:08.666Z"
 }

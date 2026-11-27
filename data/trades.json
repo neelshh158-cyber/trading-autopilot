@@ -278,5 +278,33 @@
     "charges": 5.16,
     "net": 25.38,
     "equityAfter": 9943.25
+  },
+  {
+    "id": "2026-11-27-SBIN-P1",
+    "date": "2026-11-27",
+    "symbol": "SBIN",
+    "yahoo": "SBIN.NS",
+    "angel": "SBIN-EQ",
+    "side": "LONG",
+    "qty": 4,
+    "entry": 1143.07,
+    "stop": 1131.95,
+    "target": 1158.3,
+    "riskPerShare": 11.11999999999989,
+    "riskAmt": 42.2,
+    "openedAt": "2026-11-27T04:10:05.100Z",
+    "openedHm": "09:40",
+    "lastCandleTs": 1795756800000,
+    "orderId": "P1",
+    "slOrderId": null,
+    "reason": "close 1142.5 above range high 1141.3499755859375, volume 2.0x",
+    "exit": 1131.38,
+    "exitReason": "stop",
+    "closedAt": "2026-11-27T05:25:05.089Z",
+    "closedHm": "10:55",
+    "gross": -46.76,
+    "charges": 4.83,
+    "net": -51.59,
+    "equityAfter": 9891.66
   }
 ]
